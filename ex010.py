@@ -1,5 +1,5 @@
-real = float(input('Quantos reais você tem? '))
+real = float(input('Quantos reais você tem? R$ '))
 dolar = 3.27
 conversao = real / dolar
-print('Com os R$ {} que você tem, pode comprar U$ {:.3f}!'.format(real, conversao))
+print('Com os R$ {:.2f} que você tem, pode comprar U$ {:.2f}!'.format(real, conversao))
 
