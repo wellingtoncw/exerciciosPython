@@ -1,0 +1,2 @@
+cid = str(input('Em que cidade você nasceu? ')).strip() #strip pra tirar os espaço do inicio e fim da string
+print(cid[:5].upper() == 'SANTO') # converte pra maiusculo e testa se tem SANTO do indice 0 ao 4
