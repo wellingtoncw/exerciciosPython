@@ -1,9 +1,13 @@
-import random
-sorteio = random.randrange(6)
-print('PENSANDO EM UM NÚMERO...')
-numero = str(input('De 1 a 5, em que número eu pensei? '))
-if numero == sorteio:
-    print('PARABÉNS!! VOCÊ GANHOU!!')
+from random import randint
+from time import sleep
+computador = randint(0,5) #computador pensando no numero
+print('-=-'*20)
+print('Vou pensar em um número entre 0 e 5. Tente advinhar...')
+print('-=-'*20)
+jogador = int(input('Em que número eu pensei? ')) #jogador tentando advinhar
+print('PROCESSANDO...')
+sleep(2)
+if jogador == computador:
+    print('Parabéns!! Você conseguiu me vencer!!')
 else:
-    print('VOCÊ ERROU! TENTE OUTRA VEZ! :(')
-print('O número em que eu pensei foi {}'.format(sorteio))
+    print('GANHEI! Eu pensei no número {}! e não no {}!'.format(computador, jogador))
