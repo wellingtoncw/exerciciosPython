@@ -1,0 +1,11 @@
+from time import sleep
+print('PRA VOCÊ LEMBRAR...\n')
+print('EU')
+sleep(1)
+print('TE')
+sleep(1)
+print('AMO')
+sleep(1)
+print('ETERNAMENTE...')
+sleep(2)
+print('MINHA GABIII!! S2')
